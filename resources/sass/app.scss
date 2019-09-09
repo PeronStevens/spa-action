@@ -1,0 +1,45 @@
+@import '@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '@fortawesome/fontawesome-free/scss/solid.scss';
+@import '@fortawesome/fontawesome-free/scss/brands.scss';
+
+// Variables
+@import 'variables';
+
+// Global
+@import 'global';
+
+// Helpers
+@import 'helpers';
+
+// Validation
+@import "validation";
+
+// Header
+@import 'header';
+
+// Footer
+@import 'footer';
+
+// Sub nav
+@import 'sub-nav';
+
+// Left side
+@import 'left-side';
+
+// Old Version Pop-Up
+@import 'old-pop-up';
+
+// Activities
+@import 'activities';
+
+// Page
+@import "page";
+
+// Claim Credits
+@import "claim-credits";
+
+// Congrats
+@import "congrats";
+
+// Certificate
+@import "certificate";

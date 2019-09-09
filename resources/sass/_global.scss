@@ -1,0 +1,85 @@
+// Variables
+@import 'variables';
+
+html {
+  height: 100%;
+
+  body {
+    min-height: 100%;
+    position: relative;
+    padding-top: 0;
+    padding-bottom: $footer-height;
+
+    @media (min-width: $bp-sm) {
+      padding-bottom: $footer-height-sm;
+    }
+
+    @media (min-width: $bp-lg) {
+      padding-top: $header-height-lg + $sub-nav-height;
+    }
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-cutive;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+a {
+  transition:
+          color 0.15s ease-in-out,
+          background-color 0.15s ease-in-out,
+          border-color 0.15s ease-in-out,
+          box-shadow 0.15s ease-in-out;
+
+  &.disabled {
+    pointer-events: none;
+    color: $gray !important;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+.select-wrap {
+  select {
+    -webkit-appearance: none;
+  }
+
+  &::after {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 1rem;
+    color: $gray;
+    font-family: $font-family-font-awesome;
+    font-weight: 900;
+    content: "\f107";
+  }
+}
+
+.popover-body {
+  ol {
+    margin: 0;
+    padding-left: 20px;
+  }
+}
+
+.start,
+.start-program-btn {
+  border-radius: 0;
+  background: $dkb-navi;
+  color: $white;
+}
+
+.no-bottom-border {
+  border-bottom: 0;
+}
+
+.supported-by {
+  font-size: .9em;
+}

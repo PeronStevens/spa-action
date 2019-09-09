@@ -1,0 +1,104 @@
+// Variables
+@import 'variables';
+
+// Border radius
+.br-n {
+  border-radius: 0;
+}
+
+.br-r {
+  border-radius: 999px;
+}
+
+.br-lr {
+  border-radius: 999px 0 0 999px;
+}
+
+.br-rr {
+  border-radius: 0 999px 999px 0;
+}
+
+// Typography
+.strong {
+  font-weight: bold;
+}
+
+.em {
+  font-style: italic;
+}
+
+.text-smaller {
+  font-size: $text-smaller;
+}
+
+.text-bigger {
+  font-size: $text-bigger;
+}
+
+.ff-cutive {
+  font-family: $font-family-cutive;
+}
+
+.ff-sans-serif {
+  font-family: $font-family-sans-serif;
+}
+
+// Positioning
+.pos-t-0 {
+  top: 0;
+}
+
+.pos-r-0 {
+  right: 0;
+}
+
+.pos-b-0 {
+  bottom: 0;
+}
+
+.pos-l-0 {
+  left: 0;
+}
+
+.pos-x-0 {
+  right: 0;
+  left: 0;
+}
+
+.pos-absolute {
+  position: absolute;
+}
+
+.pos-relative {
+  position: relative;
+}
+
+.pos-fixed {
+  position: fixed;
+}
+
+.pos-md-fixed {
+  @media (min-width: $bp-md) {
+    position: fixed;
+  }
+}
+
+.pos-lg-fixed {
+  @media (min-width: $bp-lg) {
+    position: fixed;
+  }
+}
+
+// Padding
+.p-2px {
+  padding: 2px;
+}
+
+// Misc
+.lst-none {
+  list-style-type: none;
+}
+
+.va-b {
+  vertical-align: bottom;
+}

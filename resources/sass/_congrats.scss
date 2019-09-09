@@ -1,0 +1,20 @@
+// Variables
+@import 'variables';
+
+.congrats {
+  text-align: center;
+	
+	.btn-width {
+		min-width: 225px;
+	}
+
+	.circle {
+	  height: 200px;
+	  line-height: 200px;
+	  width: 200px;
+	  font-size: 5rem;
+	  border-width: 5px !important;
+	  font-family: $font-family-cutive;
+	}
+}
+

@@ -1,0 +1,40 @@
+// Variables
+@import 'variables';
+
+.sub-nav {
+  top: $header-height-lg;
+  left: 0;
+  right: 0;
+  z-index: 1;
+
+  .fab, .fas {
+    font-size: 20px;
+  }
+
+  .nav-item {
+    .nav-link {
+      border-radius: 0;
+      padding: 0.5rem 0.875rem;
+
+      &.active {
+        // text-decoration: underline;
+      }
+    }
+
+    &:not(:last-child) {
+      border-right: 1px solid $white !important;
+    }
+
+    // &:first-child {
+    //   .nav-link {
+    //     border-radius: 999px 0 0 999px;
+    //   }
+    // }
+
+    // &:last-child {
+    //   .nav-link {
+    //     border-radius: 0 999px 999px 0;
+    //   }
+    // }
+  }
+}

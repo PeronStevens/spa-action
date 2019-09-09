@@ -1,0 +1,49 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Cutive');
+
+// Variables
+@import 'variables';
+
+// Add custom colors to theme
+$theme-colors: (
+        dkb-green: $dkb-green,
+        dkb-navi: $dkb-navi,
+        activity-1: $activity-1,
+        activity-2: $activity-2,
+        activity-3: $activity-3,
+);
+
+// // Bootstrap
+// @import '~bootstrap/scss/bootstrap';
+
+// // Font Awesome
+// @import "~@fortawesome/fontawesome-free/scss/solid.scss";
+// @import "~@fortawesome/fontawesome-free/scss/brands.scss";
+// @import "~@fortawesome/fontawesome-free/scss/regular.scss";
+// @import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+
+// Custom Changes
+.btn,
+.form-control {
+  border-radius: 999px;
+}
+
+.btn-dkb-green {
+  color: $white;
+}
+
+.dropdown-divider {
+  border-color: $white;
+}
+
+.progress {
+  height: 1.5rem;
+
+  .progress-bar {
+    min-width: 30px;
+  }
+}
+
+.pt-1, .py-1{
+  padding-top: 0.5rem;
+}

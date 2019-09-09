@@ -1,0 +1,70 @@
+// Variables
+@import 'variables';
+
+.certificate {
+	margin: 30px auto;
+	border: 5px solid $dkb-navi;
+
+	.d-flex {
+		display:flex;
+	}
+
+	.flex-column {
+		flex-direction:column;
+	}
+
+	.justify-content-between {
+		justify-content:space-between;
+	}
+
+	.align-items-end {
+		align-items:flex-end;
+	}
+
+	&.ama,
+	&.other,
+	&.rems {
+		width: 1450px;
+		height: 990px;
+		border-width: 10px;
+
+		* {
+			color: $dkb-navi;
+		}
+
+		.inner-border {
+			margin: 10px;
+			border: 3px solid $dkb-navi;
+			height: 950px;
+			position: relative;
+			background-image: url("https://smart.dkbmed.com/images/dome.jpg");
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: 250px auto;
+
+			.jhu-block {
+				position: absolute;
+				top: 3rem;
+				left: 3rem;
+			}
+		}
+	}
+
+	&.acpe,
+	&.ancc {
+		width: 990px;
+		height: 1450px;
+	}
+
+	* {
+		font-family: $font-family-sans-serif;
+	}
+
+	p {
+		margin-bottom: 0;
+	}
+
+	.mw-250 {
+		min-width: 250px;
+	}
+}

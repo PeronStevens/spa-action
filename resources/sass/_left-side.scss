@@ -1,0 +1,13 @@
+// Variables
+@import 'variables';
+
+.left-side {
+  top: $header-height-lg;
+  left: 0;
+  bottom: $footer-height-sm;
+  right: 0;
+
+  div {
+  	height: 100%;
+  }
+}

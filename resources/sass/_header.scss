@@ -1,0 +1,80 @@
+// Variables
+@import 'variables';
+
+header {
+  z-index: 1;
+
+  .dkbmed-logo {
+    max-height: 45px;
+
+    @media (min-width: $bp-md) {
+      max-height:63px;
+    }
+  }
+
+  .navbar {
+    padding: 0;
+
+    .navbar-bars {
+      padding: 0.25rem 0.75rem;
+      font-size: 1.25rem;
+      z-index: 1;
+    }
+
+    .navbar-nav {
+      border-top: 1px solid $white;
+
+      @media (min-width: $bp-sm) {
+        border-top: 0;
+      }
+
+      .nav-item {
+        padding: 0 1rem;
+
+        &:first-child {
+          @media (min-width: $bp-sm) {
+            border-right: 1px solid $white;
+          }
+        }
+
+        &:not(:first-child) {
+          @media (min-width: $bp-sm) {
+            display: none;
+          }
+        }
+
+        .nav-link {
+          color: $white;
+
+          &:hover {
+            color: $dkb-green;
+          }
+
+          &.active {
+            // text-decoration: underline;
+          }
+        }
+      }
+    }
+    .search-form {
+      position: absolute;
+      top: 0;
+      right: 0;
+      max-width: 246px;
+
+      @media (min-width: $bp-sm) {
+        max-width: none;
+      }
+
+      * {
+        font-size: 1.25rem;
+        height: 40px;
+        border: 0;
+
+        ::placeholder {
+          color: $light;
+        }
+      }
+    }
+  }
+}

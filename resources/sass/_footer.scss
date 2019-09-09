@@ -1,0 +1,28 @@
+// Variables
+@import 'variables';
+
+footer {
+  color: $white;
+
+  .socials {
+    a {
+      color: $white;
+      font-size: 1.75rem;
+      margin-right: 0.75rem;
+
+      &:hover {
+        color: $dkb-green;
+      }
+    }
+  }
+
+  .privacy {
+    a {
+      color: $dkb-green;
+
+      &:hover {
+        color: $dkb-green;
+      }
+    }
+  }
+}
